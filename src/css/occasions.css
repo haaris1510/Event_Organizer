@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  ---padding-inline-section: 20px;
+}
+.container {
+  max-width: 1300px;
+  margin-inline: auto;
+  padding: var(---padding-inline-section);
+}
+.oc-main-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  border-radius: 0.75rem;
+}
+.flex {
+  display: flex;
+}
+
+.oc-options-card {
+  flex-direction: column;
+
+  align-items: center;
+  /* position: relative; */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+
+  /* gap: 0.1rem; */
+}
+
+.oc-image-wrapper {
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+.oc-image-wrapper img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease-in-out;
+}
+.occasion-name {
+  transition: transform 0.3s ease-in-out;
+}
+.oc-options-card:hover .occasion-name {
+  transform: scale(1.1);
+}
+
+/* ------------ */
+.dropdown {
+  left: 20px;
+  position: relative;
+  display: inline-block;
+}
+.btn {
+  padding: 10px 20px;
+}
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s;
+  pointer-events: none;
+  border-radius: 0.5rem;
+}
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.dropdown-content a {
+  color: black;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background: gray;
+}
+.flex-box {
+  flex-direction: column;
+}
+.home-heading {
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 0.25rem;
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}
+.home-heading::before {
+  left: 30px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 20%;
+  background-color: orangered;
+  border-radius: 1rem;
+  opacity: 0.5;
+}
+.home-heading::after {
+  right: 30px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 20%;
+  background-color: orangered;
+  border-radius: 1rem;
+  opacity: 0.5;
+}
+.home-heading-para {
+  color: gray;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .oc-options-card {
+    min-width: 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .oc-options-card {
+    min-width: 50%;
+  }
+  .oc-main-grid-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 400px) {
+  .occasion-name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 332px) {
+  .occasion-name {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}

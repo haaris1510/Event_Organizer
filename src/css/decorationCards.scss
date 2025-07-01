@@ -1,0 +1,88 @@
+.baby-main-heading{
+    align-items: center;
+    justify-content: space-between;
+      padding-bottom: 20px;
+}
+.baby-main-heading a{
+    text-decoration: none;
+    color: rgb(151, 7, 7);
+    font-weight: 700;
+    text-decoration: underline;
+}
+.img-wrapper{
+    height: 17rem;
+     border-radius: 10px;
+     position: relative;
+}
+
+.card-img{
+    height: 17rem;
+    object-fit: contain;
+    // width: 100%;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+.baby-card-main-container{
+    flex-direction: column;
+    border: 1px solid rgba(36, 39, 44, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px;
+    border-radius: 10px;
+     
+    
+}
+.baby-card-name{
+    padding-block: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.baby-decor-price-container{
+   gap: 20px;
+    align-items: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.sale-price{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.mrp-price{
+    text-decoration: line-through;
+    color: gray;
+    font-size: 12px;
+}
+.sale-off{
+    font-size: 12px;
+    font-weight: 700;
+    background-color: green;
+    color: white;
+    padding: 4px 8px;
+    border-width: 1px;
+    border-radius: 1.5rem;
+}
+.card-wrapper{
+    width: 100%;
+    justify-content: space-between;
+}
+.star-img{
+    height: 12px;
+    width: 12px;
+}
+.ratings{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+    gap:5px;
+    padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  background-color: rgb(255 255 255/.8);
+  border-top-left-radius: 0.5rem;
+}
+.rating-point{
+    font-weight: 700;
+}
