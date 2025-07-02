@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Occasions from './components/Occasions'
 import Packages from './components/Packages'
+import ProductPage from './components/ProductPage'
 import ShopandOfficeDecor from './components/ShopandOfficeDecor'
 import WelcomeBabyDecoration from './components/WelcomeBabyDecoration'
 
@@ -31,6 +32,7 @@ function App() {
       <Packages />
       <ClientSection />
       <Footer/>
+      <ProductPage/>
     </>
   )
 }

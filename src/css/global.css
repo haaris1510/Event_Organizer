@@ -9,8 +9,11 @@
     --primary-color: #black;
     --text-color: #fff;
     --background: #2a272788;
+    ---padding-inline-section: 20px;
   }
   body{
     font-family: "Nunito", sans-serif;
+    
   }
+
   

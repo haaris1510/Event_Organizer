@@ -1,0 +1,303 @@
+
+.main-product-page-container{
+    
+    gap: 2rem;
+    // justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    // align-items: stretch;
+}
+.small-img-box-container{
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.small-img{
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+.small-img img{
+    height: 60px;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.product-images-div{
+    gap: 1rem;
+    position: sticky;
+     top: 1rem;
+     align-self: flex-start;
+}
+.product-large-img-box{
+    position: relative;
+}
+.product-large-img-box img{
+    width: 472px;
+    border-radius: 0.5rem;
+}
+.bestseller{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 10px;
+    background-color: rgb(114, 49, 49);
+    color: white;
+    border-top-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    font-size: 13px;
+}
+.product-details-container{
+   
+    width: 100%;
+    gap: .75rem;
+    flex-direction: column;
+    flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 1rem;
+    
+   
+}
+.product-details,.select-city-container,.choose-balloon-color-container,.info-details-container,.booking-container{
+    // gap: 1rem;
+    flex-direction: column;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    padding-right: 1.25rem;
+    padding-left: 1.5rem;
+    border: 1px solid rgba(36, 39, 44, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px;
+    width: 100%;
+    background-color: rgb(255 255 255);
+    opacity: 1;
+    border-radius: 1rem;
+    height: fit-content;
+   
+}
+.product-prices-div{
+    padding-top: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+.product-sale-price{
+    font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+.product-mrp-price{
+    text-decoration-line: line-through;
+    color: rgb(107 114 128);
+    font-size: .875rem;
+  line-height: 1.25rem;
+}
+.product-details h3{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+.product-sale{
+    background-color: rgb(28 149 80);
+    border-radius: 1rem;
+    padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  color: white;
+  font-size: 12px;
+}
+.charges{
+    color: rgb(107 114 128);
+    font-size: 13px;
+}
+.product-ratings{
+    padding-block: 1rem;
+    align-items: center;
+    gap: .5rem;
+}
+.ratings-prod{
+    font-weight: bold;
+}
+.reviews-count-prod{
+    border-left: 1px solid rgba(0,0,0,.2);
+    padding-left: .5rem;
+    color: rgb(37 99 235);
+    font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.more-products{
+    align-items: center;
+    gap: .5rem;
+    font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  background-color: rgb(38 111 70);
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  color: white;
+  border-radius: 0.5rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.icon-wrapper-input{
+    width: 80%;
+//     padding-left: .5rem;
+//   padding-right: .5rem;
+//   border-radius: 0.5rem;
+//   border: 1px solid rgb(212 212 216);
+position: relative;
+margin-top: 1rem;
+
+}
+.icon img{
+    height: 20px;
+    // width: 100%;
+}
+.icon{
+    position: absolute;
+    top:50%;
+    left:2px;
+    transform: translateY(-50%);
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+}
+.city-input{
+    padding-top: .75rem;
+  padding-bottom: .75rem;
+    font-size: 16px;
+  padding-right: .5rem;
+  width: 100%;
+    padding-left: 2rem;
+  padding-right: .5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(212 212 216);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0/0.1),0 2px 4px -2px rgb(0 0 0/0.1);
+}
+input::placeholder,textarea::placeholder{
+    color: #9ca3af;
+}
+
+.date-time-div{
+    margin-top: 1rem;
+    align-items: center;
+    gap: .5rem;
+    background-color: rgb(243 232 255);
+    width: fit-content;
+    padding: .5rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    font-size: 13px;
+    color: rgb(147 51 234);
+}
+.balloon-color{
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+      font-size: 16px;
+    padding-right: .5rem;
+    width: 80%;
+      padding-left: 0.5rem;
+    padding-right: .5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(212 212 216);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0/0.1),0 2px 4px -2px rgb(0 0 0/0.1);
+    background-color: white;
+    text-wrap: nowrap;
+    margin-top: 10px;
+}
+.other-color{
+    text-align: right;
+    width: 80%;
+    padding-top: .5rem;
+    justify-content: end;
+}
+.other-color p{
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    width: fit-content;
+}
+.other-color span{
+    color: #ff3e6c;
+    text-decoration: underline;
+    
+}
+.info-details{
+    // padding-bottom: .5rem;
+    border-bottom: solid 1px  rgb(212 212 216); ;
+    justify-content: space-between;
+    padding-right: 1rem;
+    
+    
+}
+.info-details button{
+    background-color: transparent;
+    border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+.points{
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-left: .5rem;
+    gap: 2rem;
+    list-style: bull;
+}
+.points ul li{
+    font-size: 15px;
+    padding-block: .5rem;
+}
+.info-details button.active-tab {
+   
+    color: #ff3e6c;
+    
+    border-bottom: 2px solid #ff3e6c;
+    
+  }
+  .offer{
+    align-items: center;
+  }
+  .offer-logo{
+    color: blue;
+    font-size: 24px;
+  }
+  .buttons-container{
+    justify-content: space-between;
+  }
+  .buttons-container button{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  }
+  .whatsapp-btn{
+    border:2px solid rgb(37 211 102);
+    border-radius: .5rem;
+    background: none;
+    width: 48%;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(37 211 102);
+    justify-content: center;
+    align-items: center;
+    gap:5px
+  }
+  .whatsapp-btn img{
+    height: 25px;
+  }
+  .book-now-btn{
+    border-radius: .5rem;
+    background-color: #ff3e6c;
+    width: 48%;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    border: none;
+   
+  }
