@@ -1,5 +1,6 @@
 
 import './App.css'
+import AppRoute from './AppRoute'
 import AnniversayDecoration from './components/AnniversayDecoration'
 import BabyShowerDecoration from './components/BabyShowerDecoration'
 import BacheloretteDecoration from './components/BacheloretteDecoration'
@@ -19,7 +20,8 @@ function App() {
 
   return (
     <>
-      <Navbar />
+    <AppRoute/>
+      {/* <Navbar />
       <Explore />
       <Occasions />
       <BirthdayDecoration />
@@ -32,7 +34,7 @@ function App() {
       <Packages />
       <ClientSection />
       <Footer/>
-      <ProductPage/>
+      <ProductPage/> */}
     </>
   )
 }

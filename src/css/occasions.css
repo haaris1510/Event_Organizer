@@ -43,6 +43,8 @@ body {
   object-fit: cover;
   overflow: hidden;
   border-radius: 0.75rem;
+  animation: home-flash;
+  cursor: pointer;
 }
 .oc-image-wrapper img {
   height: 100%;
@@ -132,6 +134,19 @@ body {
   font-weight: 500;
   font-size: 0.5rem;
   margin-bottom: 1.5rem;
+}
+.img-flash{
+  content: "";
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  transform: rotate(5deg);
+  height: 100%;
+  width: 20px;
+  background-color: rgba(255,255,255,.397);
+  filter: blur(5px);
+  z-index: 100;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,52 +1,61 @@
 import React from 'react'
 import '../css/occasions.css'
+import { Link } from 'react-router-dom'
 
 const occasionOptions = [{
     id: 1,
     src: "occasion1.avif",
     alt: "image 1",
-    name: "Birthday"
+    name: "Birthday",   
+    slug:"birthday"
 }, {
     id: 2,
     src: "occasion2.avif",
     alt: "image 2",
-    name: "Baby Shower"
+    name: "Baby Shower",
+    slug:"baby-shower"
 },
 {
     id: 3,
     src: "occasion3.avif",
     alt: "image 3",
-    name: "Candlelight Dinner"
+    name: "Wedding Anniversary",
+    slug:"wedding-anniversary"
 },
 {
     id: 4,
     src: "occasion4.avif",
     alt: "image 4",
-    name: "Baby Welcome"
+    name: "Baby Welcome",
+    slug:"baby-welcome"
 },
 {
     id: 5,
     src: "occasion5.avif",
     alt: "image 5",
-    name: "House Warming"
+    name: "Bachelorette",
+    slug:"bachelorette"
 },
 {
     id: 6,
     src: "occasion6.avif",
     alt: "image 6",
-    name: "Haldi/Mehendi"
+    name: "Shop and Office Decoration",
+    slug:"shop-office-decor"
 },
 {
     id: 7,
     src: "occasion7.avif",
     alt: "image 7",
-    name: "Wedding Anniversary"
+    name: "Car Decoration",
+    slug:"car-decoration"
 },
 {
     id: 8,
     src: "occasion8.avif",
     alt: "image 8",
-    name: "Party Decorations"
+    name: "Party Decorations",
+    slug:"party-decorations"
 }
 ]
 const Occasions = () => {
@@ -61,9 +70,9 @@ const Occasions = () => {
                 {occasionOptions.map((occasion) => {
                     return (
                         <div key={occasion.id} className='oc-options-card flex' >
-                            <div className="oc-image-wrapper">
+                           <Link to={`/${occasion.slug}`}> <div className="oc-image-wrapper" >
                                 <img src={occasion.src} alt={occasion.alt} />
-                            </div>
+                            </div></Link>
                             <div className="name-details">
                                 <p className='occasion-name'>{occasion.name}</p>
                             </div>

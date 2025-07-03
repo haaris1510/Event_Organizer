@@ -1,8 +1,9 @@
+import Wrapper from "../Wrapper"
 
 const AnniversayDecoration = () => {
-  return (
-   <>
-   <div className="baby-main-container container ">
+    return (
+        <><Wrapper>
+            <div className="baby-main-container container ">
                 <div className="baby-main-heading flex">
                     <h2>Romantic Anniversary Decoration</h2>
                     <a href="">View All</a>
@@ -14,8 +15,9 @@ const AnniversayDecoration = () => {
                     <AnniversaryDecorationCard decorName="Anniversary Bliss Setup" mrp="₹2999" salePrice="₹2499" salePercantage="17%" src="anniversary4.webp" ratingPoint="4.6" reviewsCount="255" />
                 </div>
             </div>
-   </>
-  )
+        </Wrapper>
+        </>
+    )
 }
 
 export default AnniversayDecoration

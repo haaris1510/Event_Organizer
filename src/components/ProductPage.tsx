@@ -3,7 +3,10 @@ import '../css/ProductPage.scss'
 import { FaArrowRight } from "react-icons/fa6";
 import { SlCalender } from "react-icons/sl";
 import { BiSolidOffer } from "react-icons/bi";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { GoArrowRight } from "react-icons/go";
+import { MdOutlineRateReview } from "react-icons/md";
+import BirthdayDecoration, { BirthdayDecorationCard } from './BirthdayDecoration';
 const tabContent: any = {
     "Package Inclusion": [
         "50 Balloons on Ceiling",
@@ -114,15 +117,51 @@ const ProductPage = () => {
                     <InfoTabs />
 
                     <div className="booking-container">
-                        <div className="offer flex"><span className='offer-logo'><BiSolidOffer /></span><p>Get upto ₹200 off <span>T&C</span></p></div>
+                        <div className="offer flex"><span className='offer-logo flex'><BiSolidOffer /></span><p>Get upto <span className='bold'>₹200</span> off <span className='gray-light'>T&C</span></p></div>
                         <div className="buttons-container flex">
                             <button className='whatsapp-btn flex'><img src="whatapp.webp" alt="" />Whatsapp Us</button>
                             <button className='book-now-btn'>Book Now</button>
                         </div>
                     </div>
+                    <div className="brand-values-wrapper">
+                    <div className="brand-values flex">
+                        <div className='decor-brand-wrapper'>
+                            <div className="decor-brand flex">
+                                <span className='span-most flex'>India's Most Trusted</span> <img src='shield.png' className='shield-img'></img>
+                            </div>
+                            <div className="home-decor-brand">Home Decor Brand </div>
+                        </div>
+                        <div className="services-points flex">
+                            <span className='services-points-flex flex'><IoMdCheckmarkCircleOutline  className='check'/> Same Day Service</span>
+                            <span className='services-points-flex flex'><IoMdCheckmarkCircleOutline className='check'/> Professional Decorators</span>
+                            <span className='services-points-flex flex'><IoMdCheckmarkCircleOutline className='check'/> Lowest Price Guaranteed</span>
+                            <span className='services-points-flex flex'><IoMdCheckmarkCircleOutline className='check'/> 10 Lacs+ Trusted Users</span>
+                        </div>
+                        
+                    </div>
+                    <div className="recent-works flex">
+                        View Our Recent Works <GoArrowRight />
+                        </div>
+                    </div>
+                    <div className="ratings-container">
+                        <p className='rating-head'>Rating</p>
+                        <div className="rating-review flex">
+                            <div className="rating-counter flex">
+                                <p className='rating-number'>4.9 <img className='star-img'src="star.png" alt="" /> </p>
+                                <p className='total-ratings'>487 Ratings</p>
+                            </div>
+                            
+                            <div className="write-a-review-box flex">
+                                <a className='write-review-text' href="">Write a review <MdOutlineRateReview /></a>
+                            </div>    
+                        </div>
+                    </div>
                 </div>
 
             </div>
+            <BirthdayDecoration headingName="Similar Products" />
+            <BirthdayDecoration headingName="Related Products"/>
+            
         </>
     )
 }
