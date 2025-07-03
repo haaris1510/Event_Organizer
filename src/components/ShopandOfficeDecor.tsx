@@ -1,8 +1,9 @@
+import Wrapper from "../Wrapper"
 
 
 const ShopandOfficeDecor = () => {
     return (
-        <>
+        <><Wrapper>
             <div className="baby-main-container container ">
                 <div className="baby-main-heading flex">
                     <h2>Shop and Office Decor</h2>
@@ -15,6 +16,7 @@ const ShopandOfficeDecor = () => {
                     <ShopandOfficeDecorationCard decorName="Shop Opening Decoration" mrp="₹3699" salePrice="₹2999" salePercantage="19%" src="shopdecor4.webp" ratingPoint="4.9" reviewsCount="84" />
                 </div>
             </div>
+            </Wrapper>
         </>
     )
 }
