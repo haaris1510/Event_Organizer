@@ -3,7 +3,7 @@ import Wrapper from "../Wrapper"
 const BabyShowerDecoration = () => {
     return (
         <>
-        <Wrapper>
+
             <div className="baby-main-container container ">
                 <div className="baby-main-heading flex">
                     <h2>Baby Shower Decoration</h2>
@@ -16,7 +16,7 @@ const BabyShowerDecoration = () => {
                     <BabyShowerCard decorName="Simple Welcome Balloon Decoration" mrp="₹2099" salePrice="₹1699" salePercantage="19%" src="baby-shower4.webp" ratingPoint="4.9" reviewsCount="287" />
                 </div>
             </div>
-            </Wrapper>
+
         </>
     )
 }
@@ -39,6 +39,15 @@ const BabyShowerCard = (props: any) => {
                     </div>
                 </div>
             </div>
+        </>
+    )
+}
+export const BabyShowerDecorationWrapped = () => {
+    return (
+        <>
+            <Wrapper>
+                <BabyShowerDecoration />
+            </Wrapper>
         </>
     )
 }

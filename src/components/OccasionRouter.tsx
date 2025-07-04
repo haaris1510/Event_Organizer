@@ -1,32 +1,32 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import BirthdayDecoration from './BirthdayDecoration';
-import BabyShowerDecoration from './BabyShowerDecoration';
-import AnniversayDecoration from './AnniversayDecoration';
-import WelcomeBabyDecoration from './WelcomeBabyDecoration';
-import BacheloretteDecoration from './BacheloretteDecoration';
-import ShopandOfficeDecor from './ShopandOfficeDecor';
-import CarDecoration from './CarDecoration';
+import { BirthdayDecorationWrapped } from './BirthdayDecoration';
+import { BabyShowerDecorationWrapped } from './BabyShowerDecoration';
+import { AnniversayDecorationWrapped } from './AnniversayDecoration';
+import { WelcomeBabyDecorationWrapper } from './WelcomeBabyDecoration';
+import { BacheloretteDecorationWrapper } from './BacheloretteDecoration';
+import { ShopandOfficeDecorWrapper } from './ShopandOfficeDecor';
+import { CarDecorationWrapper } from './CarDecoration';
 
 const OccasionRouter = () => {
     const { slug } = useParams();
     switch (slug) {
         case "birthday":
-            return <BirthdayDecoration />;
+            return <BirthdayDecorationWrapped />;
         case "baby-shower":
-            return <BabyShowerDecoration />;
+            return <BabyShowerDecorationWrapped />;
         case "wedding-anniversary":
-            return <AnniversayDecoration />;
+            return <AnniversayDecorationWrapped />;
         case "baby-welcome":
-            return <WelcomeBabyDecoration />
+            return <WelcomeBabyDecorationWrapper />
         case "bachelorette":
-            return <BacheloretteDecoration />;
+            return <BacheloretteDecorationWrapper />;
         case "shop-office-decor":
-            return <ShopandOfficeDecor />
+            return <ShopandOfficeDecorWrapper />
         case "car-decoration":
-            return <CarDecoration />
+            return <CarDecorationWrapper />
     }
-   
+
 }
 
 export default OccasionRouter

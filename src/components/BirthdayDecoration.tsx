@@ -1,9 +1,9 @@
 import Wrapper from "../Wrapper"
 
-const BirthdayDecoration = (props:any) => {
+const BirthdayDecoration = (props: any) => {
     return (
         <>
-         <Wrapper>
+
             <div className="baby-main-container container ">
                 <div className="baby-main-heading flex">
                     <h2>{props.headingName || "Birthday Decoration"}  </h2>
@@ -16,17 +16,17 @@ const BirthdayDecoration = (props:any) => {
                     <BirthdayDecorationCard decorName="Blush & Glow Birthday Theme" mrp="₹2499" salePrice="₹2199" salePercantage="12%" src="birthday4.webp" ratingPoint="4.9" reviewsCount="287" />
                 </div>
             </div>
-            </Wrapper>
+
         </>
     )
 }
 
 export default BirthdayDecoration
 
-export const  BirthdayDecorationCard = (props: any) => {
+export const BirthdayDecorationCard = (props: any) => {
     return (
         <>
-       
+
             <div className="baby-card flex">
                 <div className="baby-card-main-container flex">
                     <div className="img-wrapper">
@@ -41,7 +41,17 @@ export const  BirthdayDecorationCard = (props: any) => {
                     </div>
                 </div>
             </div>
-          
+
         </>
     )
+}
+
+export const BirthdayDecorationWrapped = () => {
+    return (
+    <>
+        <Wrapper>
+            <BirthdayDecoration />
+        </Wrapper>
+    </>
+)
 }

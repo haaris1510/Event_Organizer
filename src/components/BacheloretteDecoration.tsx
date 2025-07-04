@@ -4,7 +4,7 @@ import Wrapper from "../Wrapper"
 const BacheloretteDecoration = () => {
     return (
         <>
-        <Wrapper>
+
             <div className="baby-main-container container ">
                 <div className="baby-main-heading flex">
                     <h2>Bachelorette Party</h2>
@@ -17,7 +17,7 @@ const BacheloretteDecoration = () => {
                     <BacheloretteDecorationCard decorName="Simple Bachelorette Decoration" mrp="₹2099" salePrice="₹1799" salePercantage="14%" src="bachelorette4.webp" ratingPoint="4.6" reviewsCount="91" />
                 </div>
             </div>
-            </Wrapper>
+
         </>
     )
 }
@@ -41,6 +41,15 @@ const BacheloretteDecorationCard = (props: any) => {
                     </div>
                 </div>
             </div>
+        </>
+    )
+}
+export const BacheloretteDecorationWrapper = () => {
+    return (
+        <>
+            <Wrapper>
+                <BacheloretteDecoration />
+            </Wrapper>
         </>
     )
 }
