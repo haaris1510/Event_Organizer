@@ -1,11 +1,14 @@
 import '../css/Footer.scss'
+import { allDecorOptions } from './Home'
 const Footer = () => {
+    const decorCategories = [...new Set(allDecorOptions.map((item) => item.category))]
+    console.log(decorCategories)
     return (
         <>
             <div className="main-footer-container ">
                 <div className="footer-container container flex">
                     <div className="logo-box">
-                        <img src="logo.jpg" alt="" />
+                        <img src="/logo.jpg" alt="" />
                         <p>India ka party expert</p>
                     </div>
                     <div className="important-links">
@@ -64,15 +67,15 @@ const Footer = () => {
             </div>
             <div className="secondary-footer ">
                 <div className="secondary-wrapper container flex">
-                <div className="copyright">© 2025 Qoazy.com - All Rights Reserved</div>
-                <div className="social-links flex">
-                    <a href=""><img className='social-img' src="facebook.webp" alt="" /></a>
-                    <a href=""><img className='social-img' src="x.webp" alt="" /></a>
-                    <a href=""><img className='social-img' src="instagram.webp" alt="" /></a>
-                    <a href=""><img className='social-img' src="linkdin.webp" alt="" /></a>
-                    <a href=""><img className='social-img' src="pinterest.webp" alt="" /></a>
+                    <div className="copyright">© 2025 Qoazy.com - All Rights Reserved</div>
+                    <div className="social-links flex">
+                        <a href=""><img className='social-img' src="facebook.webp" alt="" /></a>
+                        <a href=""><img className='social-img' src="x.webp" alt="" /></a>
+                        <a href=""><img className='social-img' src="instagram.webp" alt="" /></a>
+                        <a href=""><img className='social-img' src="linkdin.webp" alt="" /></a>
+                        <a href=""><img className='social-img' src="pinterest.webp" alt="" /></a>
 
-                </div>
+                    </div>
                 </div>
             </div>
 

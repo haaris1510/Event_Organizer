@@ -15,7 +15,7 @@ const OccasionRouter = () => {
             return <BirthdayDecorationWrapped />;
         case "baby-shower":
             return <BabyShowerDecorationWrapped />;
-        case "wedding-anniversary":
+        case "anniversary":
             return <AnniversayDecorationWrapped />;
         case "baby-welcome":
             return <WelcomeBabyDecorationWrapper />

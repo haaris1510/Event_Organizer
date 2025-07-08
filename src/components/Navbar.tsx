@@ -3,6 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import "../css/navbar.scss";
 import { RiCustomerService2Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -30,8 +31,8 @@ function Navbar() {
 
         <div className="down-navbox">
           <div className="left-down">
-            <img src="logo.jpg" alt="logo" className="logo" />
-            <h3>QOUZY</h3>
+            <Link to="/"> <img src="/logo.jpg" alt="logo" className="logo" /></Link>
+            <Link to="/"> <h3>QOUZY</h3> </Link>
             <input
               type="text"
               placeholder="What are you celebrating"

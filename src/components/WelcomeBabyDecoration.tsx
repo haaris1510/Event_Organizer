@@ -1,7 +1,10 @@
+import { Link } from 'react-router-dom'
 import '../css/decorationCards.scss'
 import Wrapper from '../Wrapper'
+import { allDecorOptions } from './Home'
 
 const WelcomeBabyDecoration = () => {
+    const welcomeBabyProducts = allDecorOptions.filter((item) => item.category === "welcomebaby")
     return (
 
         <>
@@ -12,10 +15,16 @@ const WelcomeBabyDecoration = () => {
                     <a href="">View All</a>
                 </div>
                 <div className="card-wrapper flex">
-                    <WelcomeBabyCard decorName="Welcome Baby Princess Decoration" mrp="₹4499" salePrice="₹3899" salePercantage="13%" src="welcome-baby1.webp" ratingPoint="4.9" reviewsCount="487" />
+                    {welcomeBabyProducts.map((item) => {
+                        // console.log(item)
+                        return (
+                            <WelcomeBabyCard key={item.slug} {...item} />
+                        )
+                    })}
+                    {/* <WelcomeBabyCard decorName="Welcome Baby Princess Decoration" mrp="₹4499" salePrice="₹3899" salePercantage="13%" src="welcome-baby1.webp" ratingPoint="4.9" reviewsCount="487" />
                     <WelcomeBabyCard decorName="Baby Homecoming Setup" mrp="₹4499" salePrice="₹3899" salePercantage="13%" src="welcome-baby2.webp" ratingPoint="4.9" reviewsCount="352" />
                     <WelcomeBabyCard decorName="Welcome Balloon Setup" mrp="₹2399" salePrice="₹1999" salePercantage="17%" src="welcome-baby3.webp" ratingPoint="5" reviewsCount="325" />
-                    <WelcomeBabyCard decorName="Simple Welcome Balloon Decoration" mrp="₹2099" salePrice="₹1699" salePercantage="19%" src="welcome-baby4.webp" ratingPoint="4.9" reviewsCount="287" />
+                    <WelcomeBabyCard decorName="Simple Welcome Balloon Decoration" mrp="₹2099" salePrice="₹1699" salePercantage="19%" src="welcome-baby4.webp" ratingPoint="4.9" reviewsCount="287" /> */}
                 </div>
             </div>
 
@@ -30,20 +39,22 @@ export default WelcomeBabyDecoration
 const WelcomeBabyCard = (props: any) => {
     return (
         <>
-            <div className="baby-card flex">
-                <div className="baby-card-main-container flex">
-                    <div className="img-wrapper">
-                        <img className='card-img' src={props.src} alt="" />
-                        <div className="ratings flex"><p className='rating-point'>{props.ratingPoint}</p><img className='star-img' src="star.png" alt="" /> <p>({props.reviewsCount})</p></div>
-                    </div>
-                    <div className="baby-card-name"><p>{props.decorName}</p></div>
-                    <div className="baby-decor-price-container flex">
-                        <p className='sale-price'>{props.salePrice}</p>
-                        <p className='mrp-price'>{props.mrp}</p>
-                        <div className="sale-off"><p>{props.salePercantage} off</p></div>
+            <Link to={`/${props.category}/${props.slug}`}>
+                <div className="baby-card flex">
+                    <div className="baby-card-main-container flex">
+                        <div className="img-wrapper">
+                            <img className='card-img' src={props.src} alt="" />
+                            <div className="ratings flex"><p className='rating-point'>{props.rating}</p><img className='star-img' src="star.png" alt="" /> <p>({props.reviews})</p></div>
+                        </div>
+                        <div className="baby-card-name"><p>{props.name}</p></div>
+                        <div className="baby-decor-price-container flex">
+                            <p className='sale-price'>{props.salePrice}</p>
+                            <p className='mrp-price'>{props.mrp}</p>
+                            <div className="sale-off"><p>{props.salePercentage} off</p></div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Link>
         </>
     )
 }

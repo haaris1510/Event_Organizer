@@ -366,7 +366,7 @@ input::placeholder,textarea::placeholder{
 }
 .decor-brand-wrapper{
   justify-content: center;
-  border-right: 1px solid hsl(0, 0, 0,0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1) ;
    ;
    padding-right: 1.25rem;
 }
@@ -426,7 +426,7 @@ input::placeholder,textarea::placeholder{
 .rating-counter{
   flex-direction: column;
   width: 50%;
-  border-right: 1px solid hsl(0, 0, 0,0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1) ;
 }
 .total-ratings{
   color: rgb(156 163 175);

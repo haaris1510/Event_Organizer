@@ -75,7 +75,6 @@ const Explore = () => {
     const scrollContainerRef = useRef(null as any)
     const scrollLeft = () => {
         if (scrollContainerRef.current) {
-            console.log(scrollContainerRef)
             scrollContainerRef.current.scrollLeft -= 200;
         }
     }
