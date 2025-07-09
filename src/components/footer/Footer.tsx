@@ -1,5 +1,6 @@
-import '../css/Footer.scss'
-import { allDecorOptions } from './Home'
+import '../../css/Footer.scss'
+import { allDecorOptions } from '../home/Home'
+import { Link } from 'react-router-dom'
 const Footer = () => {
     const decorCategories = [...new Set(allDecorOptions.map((item) => item.category))]
     console.log(decorCategories)
@@ -57,7 +58,7 @@ const Footer = () => {
                         <div className="imp-link-heading">
                             <h3>Info</h3>
                             <div className="imp-links flex">
-                                <a href="">Contact Us</a>
+                                <Link to='/contact-us'>Contact Us</Link>
                                 <a href="">Sitemap</a>
                                 <a href="">Our Recent Work</a>
                             </div>

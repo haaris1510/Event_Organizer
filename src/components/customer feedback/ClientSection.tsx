@@ -1,4 +1,4 @@
-import '../css/clientSection.scss'
+import '../../css/clientSection.scss'
 import { CiLocationOn } from "react-icons/ci";
 
 const ClientSection = () => {

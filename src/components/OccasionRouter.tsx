@@ -1,12 +1,12 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { BirthdayDecorationWrapped } from './BirthdayDecoration';
-import { BabyShowerDecorationWrapped } from './BabyShowerDecoration';
-import { AnniversayDecorationWrapped } from './AnniversayDecoration';
-import { WelcomeBabyDecorationWrapper } from './WelcomeBabyDecoration';
-import { BacheloretteDecorationWrapper } from './BacheloretteDecoration';
-import { ShopandOfficeDecorWrapper } from './ShopandOfficeDecor';
-import { CarDecorationWrapper } from './CarDecoration';
+import { BirthdayDecorationWrapped } from './categories/BirthdayDecoration';
+import { BabyShowerDecorationWrapped } from './categories/BabyShowerDecoration';
+import { AnniversayDecorationWrapped } from './categories/AnniversayDecoration';
+import { WelcomeBabyDecorationWrapper } from './categories/WelcomeBabyDecoration';
+import { BacheloretteDecorationWrapper } from './categories/BacheloretteDecoration';
+import { ShopandOfficeDecorWrapper } from './categories/ShopandOfficeDecor';
+import { CarDecorationWrapper } from './categories/CarDecoration';
 
 const OccasionRouter = () => {
     const { slug } = useParams();

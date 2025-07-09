@@ -1,10 +1,10 @@
-import Wrapper from "../Wrapper"
-import { allDecorOptions } from "./Home"
+import Wrapper from "../../wrapper/Wrapper"
+import { allDecorOptions } from "../home/Home"
 import { Link } from "react-router-dom"
 
 const AnniversayDecoration = () => {
     const anniversaryProducts = allDecorOptions.filter(item => item.category === "anniversary")
-    
+
     return (
         <>
 
@@ -51,7 +51,7 @@ const AnniversaryDecorationCard = (props: any) => {
                     <div className="baby-card-main-container flex">
                         <div className="img-wrapper">
                             <img className='card-img' src={props.src} alt="" />
-                            <div className="ratings flex"><p className='rating-point'>{props.rating }</p><img className='star-img' src="star.png" alt="" /> <p>({props.reviews})</p></div>
+                            <div className="ratings flex"><p className='rating-point'>{props.rating}</p><img className='star-img' src="star.png" alt="" /> <p>({props.reviews})</p></div>
                         </div>
                         <div className="baby-card-name"><p>{props.name}</p></div>
                         <div className="baby-decor-price-container flex">

@@ -1,6 +1,6 @@
 
-import Wrapper from '../Wrapper'
-import WrappedComponents from './WrappedComponents'
+import Wrapper from '../../wrapper/Wrapper'
+import WrappedComponents from '../WrappedComponents'
 
 export const allDecorOptions = [
   {

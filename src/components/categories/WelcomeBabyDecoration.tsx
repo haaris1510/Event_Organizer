@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import '../css/decorationCards.scss'
-import Wrapper from '../Wrapper'
-import { allDecorOptions } from './Home'
+import '../../css/decorationCards.scss'
+import Wrapper from '../../wrapper/Wrapper'
+import { allDecorOptions } from '../home/Home'
 
 const WelcomeBabyDecoration = () => {
     const welcomeBabyProducts = allDecorOptions.filter((item) => item.category === "welcomebaby")

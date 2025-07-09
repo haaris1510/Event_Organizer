@@ -1,16 +1,16 @@
 import { useState } from 'react';
-import '../css/ProductPage.scss'
+import '../../css/ProductPage.scss'
 import { FaArrowRight } from "react-icons/fa6";
 import { SlCalender } from "react-icons/sl";
 import { BiSolidOffer } from "react-icons/bi";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { GoArrowRight } from "react-icons/go";
 import { MdOutlineRateReview } from "react-icons/md";
-import BirthdayDecoration from './BirthdayDecoration';
+import BirthdayDecoration from '../categories/BirthdayDecoration';
 
 import { useParams } from 'react-router-dom';
-import Wrapper from '../Wrapper';
-import { allDecorOptions } from './Home';
+import Wrapper from '../../wrapper/Wrapper';
+import { allDecorOptions } from '../home/Home';
 
 const tabContent: any = {
     "Package Inclusion": [
@@ -51,7 +51,7 @@ const ProductPage = () => {
         return <p>Product not found </p>
     }
     console.log(product)
-   
+
     return (
         <>
             <Wrapper>
@@ -188,7 +188,7 @@ const InfoTabs = () => {
         <>
             <div className="info-details-container">
                 <div className="info-details flex">
-                    {Object.keys(tabContent).map((      tab) => (
+                    {Object.keys(tabContent).map((tab) => (
                         <button key={tab} className={activeTab === tab ? "active-tab" : ""}
                             onClick={() => setActiveTab(tab)}> {tab}</button>
 

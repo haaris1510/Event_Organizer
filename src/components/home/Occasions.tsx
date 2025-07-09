@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/occasions.css";
+import "../../css/occasions.css";
 import { Link } from "react-router-dom";
 
 const occasionOptions = [

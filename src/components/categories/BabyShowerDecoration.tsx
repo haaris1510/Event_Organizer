@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom"
-import Wrapper from "../Wrapper"
-import { allDecorOptions } from "./Home"
+import Wrapper from "../../wrapper/Wrapper"
+import { allDecorOptions } from "../home/Home"
 
 const BabyShowerDecoration = () => {
     const babyShowerProducts = allDecorOptions.filter(item => item.category === "baby-shower")
     return (
         <>
 
-            <div className="baby-main-container container ">
+            <div className="baby-main-container container">
                 <div className="baby-main-heading flex">
                     <h2>Baby Shower Decoration</h2>
                     <a href="">View All</a>

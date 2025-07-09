@@ -1,5 +1,5 @@
-import Wrapper from "../Wrapper"
-import { allDecorOptions } from "./Home"
+import Wrapper from "../../wrapper/Wrapper"
+import { allDecorOptions } from "../home/Home"
 import { Link } from "react-router-dom"
 
 

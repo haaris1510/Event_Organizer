@@ -1,7 +1,7 @@
 import { FaPhoneAlt, FaRegUser, FaAngleDown } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
-import "../css/navbar.scss";
+import "../../css/navbar.scss";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
@@ -24,8 +24,18 @@ function Navbar() {
           <div className="right-up">
             <div className="city1">City: Jaipur</div>
             <RiCustomerService2Line />
+            <div className="dropdown-user dropdown">
+              <a href="">
+                {" "}
+                <FaRegUser />
+              </a>
+              <div className="dd-c-u dropdown-content">
+                <Link to='/sign-up'>Sign Up</Link>
+                <Link to='/login'>Login</Link>
 
-            <FaRegUser />
+              </div>
+            </div>
+
           </div>
         </div>
 

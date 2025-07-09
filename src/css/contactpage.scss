@@ -11,7 +11,7 @@
   justify-content: space-between;
   padding: 3rem 2rem;
   background-color: #f9fafc;
-  padding-inline: 111px;
+  // padding-inline: 111px;
 
   .contact-section {
     flex: 1 1 45%;
@@ -33,9 +33,11 @@
       }
 
       .illustration {
+        justify-content: center;
         img {
-          max-width: 100%;
-          height: auto;
+          width: 15rem;
+          // max-width: 100%;
+          // height: auto;
           margin-bottom: 2rem;
         }
       }
@@ -55,10 +57,10 @@
             text-decoration: none;
 
             div {
-              border: 2px dashed #fd4c70;
+              border: 2px dashed #dc2c83;
               padding: 0.6rem;
               border-radius: 50%;
-              color: #fd4c70;
+              color: #dc2c83;
               font-size: 1.2rem;
               display: flex;
               align-items: center;
@@ -66,7 +68,7 @@
               transition: all 0.3s ease;
 
               &:hover {
-                background-color: #fd4c70;
+                background-color: #dc2c83;
                 color: #fff;
               }
             }
@@ -79,11 +81,10 @@
   .form-cont {
     flex: 1 1 39%;
     background-color: #fff;
-    border: 1px solid #fd4c70;
+    border: 1px solid #dc2c83;
     border-radius: 1rem;
-    // padding: 2.5rem;
-    padding-inline: 30px;
     position: relative;
+    padding: 2rem;
 
     .contact-form {
       h2 {
@@ -120,7 +121,7 @@
 
             &:focus {
               outline: none;
-              border-color: #fd4c70;
+              border-color: #dc2c83;
             }
           }
 
@@ -132,7 +133,7 @@
 
         .send-message-btn {
           align-self: flex-start;
-          background-color: #fd4c70;
+          background-color: #dc2c83;
           color: white;
           padding: 0.75rem 12.5rem;
           font-size: 1rem;
@@ -140,6 +141,7 @@
           border-radius: 8px;
           cursor: pointer;
           transition: background-color 0.3s ease;
+          margin: auto;
 
           &:hover {
             background-color: #e93c60;
@@ -163,7 +165,7 @@
   .email32 {
     flex: 1 1 250px;
     background-color: #fdf5f7;
-    border: 1px dashed #fd4c70;
+    border: 1px dashed #dc2c83;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
@@ -187,17 +189,25 @@
 
       svg {
         font-size: 1.2rem;
-        color: #fd4c70;
+        color: #dc2c83;
       }
     }
   }
 }
-.arrow{
-    display: flex
+.arrow-img{
+  position: absolute;
+  right: 0;
+  top:-.9px;
+  z-index:1;
+  height: auto;
+  width: auto;
+display: block
+  
 ;
-    justify-self: right;
+   
     padding-right: 30px;
 }
-.arrow-img{
-    z-index: 1;
+input{
+  border: 1px solid rgba(36,39,44,.1);
+  box-shadow: 0 6px 10px rgba(0,0,0,.051);
 }

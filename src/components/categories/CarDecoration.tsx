@@ -1,4 +1,4 @@
-import Wrapper from "../Wrapper"
+import Wrapper from "../../wrapper/Wrapper"
 import { Link } from "react-router-dom"
 
 // export const carDecorOptions = [{
@@ -49,7 +49,7 @@ import { Link } from "react-router-dom"
 //     category: "car-decor",
 // }
 // ]
-import { allDecorOptions } from "./Home"
+import { allDecorOptions } from "../home/Home"
 const CarDecoration = () => {
     const carDecorProducts = allDecorOptions.filter((item) => item.category === "cardecor")
     return (
