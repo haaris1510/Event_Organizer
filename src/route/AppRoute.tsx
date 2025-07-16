@@ -3,10 +3,10 @@ import Home from '../components/home/Home'
 
 import OccasionRouter from '../components/OccasionRouter'
 import ScrollToTop from '../components/scroll to top/ScrollToTop'
-import ProductPage from '../components/product page/ProductPage'
-import Signup from '../components/signup/Signup'
-import Login from '../components/login/Login'
-import ContactPage from '../components/contact page/ContactPage'
+import ProductPage from '../pages/product page/ProductPage'
+import Signup from '../pages/signup/Signup'
+import Login from '../pages/login/Login'
+import ContactPage from '../pages/contact page/ContactPage'
 
 const AppRoute = () => {
     return (

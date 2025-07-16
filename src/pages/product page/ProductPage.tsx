@@ -1,16 +1,16 @@
 import { useState } from 'react';
-import '../../css/ProductPage.scss'
+import '../../styles/ProductPage.scss'
 import { FaArrowRight } from "react-icons/fa6";
 import { SlCalender } from "react-icons/sl";
 import { BiSolidOffer } from "react-icons/bi";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { GoArrowRight } from "react-icons/go";
 import { MdOutlineRateReview } from "react-icons/md";
-import BirthdayDecoration from '../categories/BirthdayDecoration';
+import BirthdayDecoration from '../../components/categories/BirthdayDecoration';
 
 import { useParams } from 'react-router-dom';
 import Wrapper from '../../wrapper/Wrapper';
-import { allDecorOptions } from '../home/Home';
+import { allDecorOptions } from '../../components/home/Home';
 
 const tabContent: any = {
     "Package Inclusion": [
@@ -50,7 +50,7 @@ const ProductPage = () => {
     if (!product) {
         return <p>Product not found </p>
     }
-    console.log(product)
+    // console.log(product)
 
     return (
         <>
@@ -183,7 +183,7 @@ export default ProductPage
 
 const InfoTabs = () => {
     const [activeTab, setActiveTab] = useState("Package Inclusion")
-    console.log(Object.keys(tabContent))
+    // console.log(Object.keys(tabContent))
     return (
         <>
             <div className="info-details-container">

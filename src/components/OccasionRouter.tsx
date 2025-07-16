@@ -1,4 +1,3 @@
-import React from 'react'
 import { useParams } from 'react-router-dom'
 import { BirthdayDecorationWrapped } from './categories/BirthdayDecoration';
 import { BabyShowerDecorationWrapped } from './categories/BabyShowerDecoration';

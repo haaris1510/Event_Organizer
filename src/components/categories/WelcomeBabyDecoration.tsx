@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../../css/decorationCards.scss'
+import '../../styles/decorationCards.scss'
 import Wrapper from '../../wrapper/Wrapper'
 import { allDecorOptions } from '../home/Home'
 

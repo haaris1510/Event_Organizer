@@ -6,7 +6,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 
-import "../../css/contactpage.scss";
+import "../../styles/contactpage.scss";
 import Wrapper from "../../wrapper/Wrapper";
 
 function ContactPage() {

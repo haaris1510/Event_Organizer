@@ -1,7 +1,7 @@
 import { FaPhoneAlt, FaRegUser, FaAngleDown } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
-import "../../css/navbar.scss";
+import "../../styles/navbar.scss";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 

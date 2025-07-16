@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
-import "../../css/explore.css"
+import  { useRef } from 'react'
+import "../../styles/explore.css"
 
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";

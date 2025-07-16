@@ -1,4 +1,3 @@
-import React from 'react'
 import Explore from './home/Explore'
 import Occasions from './home/Occasions'
 import AnniversayDecoration from './categories/AnniversayDecoration'

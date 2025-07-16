@@ -1,5 +1,5 @@
-import React from 'react'
-import "../css/navbar.scss"
+
+import "../styles/navbar.scss"
 
 const Packages = () => {
     return (
