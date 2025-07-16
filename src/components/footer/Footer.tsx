@@ -1,9 +1,9 @@
 import '../../styles/Footer.scss'
-import { allDecorOptions } from '../home/Home'
+// import { allDecorOptions } from '../home/Home'
 import { Link } from 'react-router-dom'
 const Footer = () => {
-    const decorCategories = [...new Set(allDecorOptions.map((item) => item.category))]
-    // console.log(decorCategories)
+    // const decorCategories = [...new Set(allDecorOptions.map((item) => item.category))]
+    // // console.log(decorCategories)
     return (
         <>
             <div className="main-footer-container ">
